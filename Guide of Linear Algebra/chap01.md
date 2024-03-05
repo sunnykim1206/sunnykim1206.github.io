@@ -177,3 +177,107 @@ $b^2-4ac>0$ 이면 두개의 근. $b^2-4ac = 0$ 이면 한개의 근. 0보다 �
 
 ## 삼각함수
 
+- 직각 삼각형에 대한 성질. 
+- 빗변, 높이, 밑변
+- 사인, 코사인, 탄젠트 - 각 변의 길이 비율
+- $ \sin \theta = \dfrac{\text{높이}}{\text{빗변}}$
+- $ \cos \theta = \dfrac{\text{밑변}}{\text{빗변}}$
+- $ \tan \theta = \dfrac{\sin \theta}{\cos \theta} = \dfrac{\text{밑변}}{\text{빗변}}$
+
+**삼각함수 항등식**
+
+$$ |\text{밑변}|^2 + |\text{높이}|^2 = |\text{빗변}|^2 $$
+$$ \dfrac{|\text{밑변}|^2}{|\text{빗변}|^2} + \dfrac{|\text{높이}|^2}{|\text{빗변}|^2} = 1 $$
+$$ \cos^2\theta + \sin^2\theta = 1$$
+
+**단위원**
+
+- 방정식 $x^2 + y^2 = 1$ 을 만족하는 모든 점 $(x,y)$ 로 구성.
+- 단위원 위의 점 $P=(P_x, P_y)$ 의 좌표는 $(P_x, P_y) = (\cos\theta, \sin\theta)$ 여기서 $\theta$ 는 $P$가 $x$ 축과 이루는 각.
+
+![traiangle](images/chap01_triangle.png)
+
+- $\sin(30^\circ) = \sin\left( \dfrac{\pi}{6}\right) = \dfrac{1}{2}$
+    - 이 값을 알면, $\cos(30^\circ), \cos(60^\circ), \sin(60^\circ)$ 를 알 수 있다.
+    - 또한 $\sin(45^\circ) = \cos(45^\circ)$ 이므로 이 값 또한 구할 수 있다.
+
+- 비단위원인 경우
+
+$$ \cos\theta = \dfrac{r_x}{r} \qquad \Rightarrow \qquad r_x = r\cos\theta$$
+$$ \sin\theta = \dfrac{r_y}{r} \qquad \Rightarrow \qquad r_y = r\sin\theta$$
+
+- 각도를 라디안 변환 : $ \theta \times \dfrac{2\pi}{360} = \text{radian} $
+
+## 삼각함수 항등식
+
+- 단위 빗변
+$$ \cos^2\theta + \sin^2\theta = 1 $$
+- 사코(sico) + 코사(cosi)
+$$ \sin(a+b) = \sin(a)\cos(b) + \cos(a)\sin(b)$$
+- 코코(coco) - 사사(sisi)
+$$ \cos(a+b) = \cos(a)\cos(b) - \sin(a)\sin(b)$$
+
+- 유도 공식
+    - 배각 공식
+    - $\sin(2x) = 2\sin(x)\cos(x)$
+    - $\cos(2x) = \cos^2(x) - \sin^2(x) = 2\cos^2(x) - 1 = 1 - 2\sin^2(x)$
+    - 반각 공식
+    - $\cos^2(x) = \dfrac{1}{2}(1+\cos(2x)), \qquad \sin^2(x) = \dfrac{1}{2}(1-\cos(2x))$
+
+- 자기 유사성 (사인, 코사인)
+    - 주기가 $2\pi$ 인 주기함수 (함수의 입력값에 $2\pi$의 배수를 더해도 함수는 변하지 않는다.)
+    - $2\pi$ 주기 내에서 **자기 유사성**이 있다. ($\sin(\pi - x) = \sin(x) \quad \cos(\pi-x) = -\cos(x) $)
+
+- 사인함수와 코사인함수는 실제로 서로 $\dfrac{\pi}{2}$만큼 평행 이동한 형태 
+$$\cos(x) = \sin\left(x + \dfrac{\pi}{2} \right) = \sin\left(\dfrac{\pi}{2} - x \right)$$
+
+$$\sin(x) = \cos\left(x - \dfrac{\pi}{2} \right) = \cos\left(\dfrac{\pi}{2} - x \right)$$
+
+- 덧셈 공식
+$$\sin(a) + \sin(b) = 2\sin\left( \dfrac{1}{2}(a+b)\right)\cos\left(\dfrac{1}{2}(a-b)\right)$$
+$$\sin(a) - \sin(b) = 2\cos\left( \dfrac{1}{2}(a+b)\right)\sin\left(\dfrac{1}{2}(a-b)\right)$$
+$$\cos(a) + \cos(b) = 2\cos\left( \dfrac{1}{2}(a+b)\right)\cos\left(\dfrac{1}{2}(a-b)\right)$$
+$$\cos(a) + \cos(b) = -2\sin\left( \dfrac{1}{2}(a+b)\right)\sin\left(\dfrac{1}{2}(a-b)\right)$$
+
+- 곱셈 공식
+$$\sin(a)\cos(b) = \dfrac{1}{2}\left(\sin\left( a+b\right) + \sin\left(a-b\right)\right)$$
+$$\sin(a)\sin(b) = \dfrac{1}{2}\left(\cos\left( a-b\right) - \cos\left(a+b\right)\right)$$
+$$\cos(a)\cos(b) = \dfrac{1}{2}\left(\cos\left( a-b\right) + \cos\left(a+b\right)\right)$$
+
+## 기하학
+
+### 삼각형
+
+- 넓이 : $ A = \dfrac{1}{2}ah_a \qquad a = \text{밑변}, h_a = \text{높이}$
+- 둘레 : 세 변 길이의 합
+- 내각 공식 : 내각의 합은 $180^\circ$
+- 사인 법칙 
+$$ \dfrac{a}{\sin(\alpha)} = \dfrac{b}{\sin(\beta)} = \dfrac{c}{\sin(\gamma)}$$
+- 코사인 법칙
+$$ a^2 = b^2 + c^2 - 2bc\cos(\alpha)$$
+$$ b^2 = a^2 + c^2 - 2ac\cos(\beta)$$
+$$ c^2 = a^2 + b^2 - 2ab\cos(\gamma)$$
+
+![triangle](images/chap01_triangle2.png)
+
+### 원
+
+- 중심이 원점(0, 0)이고 반지름이 $r$ : $x^2+y^2 = r^2$
+- 둘레 : $2\pi r$
+- 넓이 : $A = \pi r^2$
+
+### 구
+
+- 반지름 $r$ 인 구 : $x^2+y^2+z^2 = r^2$
+- 겉넓이 : $A = 4\pi r^2$
+- 부피 : $V = \dfrac{4}{3}\pi r^3$
+
+### 원기둥
+
+- 겉넓이 : 윗면과 밑면의 넓이와 옆면을 더한값. $A = 2(\pi r^2) + (2\pi r)h$
+- 부피 : 밑면의 넓이에 높이를 곱한 값. $V = (\pi r^2)h$
+
+### 원뿔과 각뿔
+
+- 모든 뿔에 적용되는 일반적인 부피 공식
+$$ V = \dfrac{1}{3}Ah \qquad A = \text{ 밑면의 넓이} \quad h = \text{ 높이}$$
