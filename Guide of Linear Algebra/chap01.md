@@ -281,3 +281,52 @@ $$ c^2 = a^2 + b^2 - 2ab\cos(\gamma)$$
 
 - 모든 뿔에 적용되는 일반적인 부피 공식
 $$ V = \dfrac{1}{3}Ah \qquad A = \text{ 밑면의 넓이} \quad h = \text{ 높이}$$
+
+## 원
+
+- 원점이 중심, 반지름이 r : $x^2 + y^2 = r^2$
+- 중심이 $(p,q)$ 인 경우 : $(x-p)^2 + (y-q)^2 = r^2$
+- 원의 방적식은 함수의 형태로 나타낼 수 없다. ($y$에 대해 두가지가 나옴)
+- $x$ 와 $y$가 분리되지 않은 관계식으로 표현된 **음함수**
+- **양함수**는 두가지. $ y = \sqrt{r^2-x^2}, \quad y = -\sqrt{r^2-x^2}$
+- **극좌표** : $r\angle\theta$ $\theta$는 $x$축을 기준 삼아 시계 반대방향으로 측정한 각도
+- 극좌표에서 $(x,y)$ 좌표 : $x = r\cos\theta, \quad y = r\sin\theta$
+- **매개변수 방정식** : $\{(x, y)\in \mathbb{R}^2 | x = r\cos\theta, y = r\sin\theta, \theta in [0, 360^\circ)\}$
+- 넓이 : $A=\pi r^2$
+- 둘레 : $C = 2\pi r$
+- 호의 길이 : $ l = 2\pi r \dfrac{\theta}{360}$
+- 라디안 : $ 2\pi[\text{rad}] = 360^\circ $
+- 라디안으로 측정한 호의 길이 : $ l = r\theta_{\text{rad}}$
+
+## 벡터
+
+- 공간에서의 방향을 나타내는 정확한 방법
+- 실수의 순서쌍으로 표시하고 각각의 실수는 **성분**
+- **벡터 대수** : 순서쌍에 대하여 수행하는 연산
+- 2차원 벡터 $\vec{v} \in \mathbb{R}^2 \text{ 는 숫자쌍 } \vec{v} = (v_x, v_y)$ $\quad v_x$ : $\vec{v}$ 의 $x$ 성분. $v_y$ : $\vec{v}$의 $y$ 성분
+
+| 표기법 | 설명 |
+|----|----|
+| $\vec{v} = (v_x, v_y)$ | 성분 표기법. x축과 y축에 대한 순서쌍 |
+| $\vec{v} = v_x\hat{i} + v_y\hat{j}$ | 단위 벡터 표기법 $\hat{i} = (1, 0), \; \hat{j} = (0,1) $|
+| $\vec{v} = \lVert \vec{v} \rVert \angle \theta$ | 길이 - 방향 표기법 |
+
+### 벡터 연산
+
+- 덧셈 : $ \vec{u} + \vec{v} =  (u_x + v_x, u_y + v_y)$
+- 뺄셈 : $ \vec{u} - \vec{v} =  (u_x - v_x, u_y - v_y)$
+- 스케일링 : $ \alpha\vec{u}  =  (\alpha u_x , \alpha u_y)$ : $\alpha < 0$ 이면 벡터가 반대 방향.
+- 내적 : $ \vec{u} \cdot \vec{v} =  u_x  v_x + u_y  v_y$
+- 길이 : $ \lVert \vec{u} \rVert =  \sqrt{\vec{u} \cdot \vec{u}} = \sqrt{u_x^2+u_y^2}$ : 같은 방향을 가리키는 **단위벡터**를 얻으러면 벡터를 자신의 길이로 스케일링.
+- 외적 : $ \vec{u} \times \vec{v} =(u_yv_z - u_zv_y, u_zv_x - u_xv_z, u_xv_y-u_yv_x)$ : 3차원 벡터에서만 정의
+- 벡터는 나눈다는 개념이 없다.
+
+### 표기법 변환
+
+- $\lVert \vec{r} \rVert \angle \theta \Rightarrow r_x = \lVert \vec{r} \rVert \cos\theta, \quad r_y = \lVert \vec{r} \rVert \sin\theta$
+- $(r_x, r_y) \Rightarrow \lVert \vec{r} \rVert = \sqrt{r_x^2+r_y^2}, \quad \theta = \tan^{-1}\left( \dfrac{r_y}{r_x}\right)$
+    - $\tan^{-1}$ 은 $\dfrac{\pi}{2}(90^\circ) \text{ 와 } -\dfrac{\pi}{2}(90^\circ)$ 사이의 값. 이 범위를 벗어난 각도를 찾을 때는 주의.
+    - $v_x < 0 $ 인 경우 올바른 $\theta$ 를 얻으려면 $\
+    tan^{-1}\left(\dfrac{r_y}{r_x}\right) \text{ 에 } \pi(180^\circ)$를 더해야 한다.
+
+
